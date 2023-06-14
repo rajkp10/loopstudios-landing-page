@@ -23,12 +23,12 @@ const listVariant = {
       staggerChildren: 0.2,
       staggerDirection: 1,
       when: "beforeChildren",
-      delay: 1,
+      delay: 1.5,
     },
   },
 };
 
-function NavLinks({ fontSize, textAlign }) {
+function NavLinks({ fontSize, textAlign, fontType }) {
   return (
     <motion.ul
       initial="hidden"
@@ -42,11 +42,12 @@ function NavLinks({ fontSize, textAlign }) {
           <motion.li
             variants={linkVariant}
             key={link}
-            className={`${textAlign} `}
+            className={`${textAlign}`}
           >
             <motion.a
               href="#"
-              className={`relative p-2 text-white ${fontSize} font-alata before:absolute before:content-[''] before:h-[2px] before:w-0 before:transition-all before:duration-150 hover:before:w-5 before:bg-white before:mx-auto before:bottom-0 before:right-0 before:left-0`}
+              className={`relative pb-2 text-white ${fontSize} ${fontType}
+              } before:absolute before:content-[''] before:h-[2px] before:w-0 before:transition-all before:duration-150 hover:before:w-5 before:bg-white before:mx-auto before:bottom-0 before:right-0 before:left-0`}
             >
               {link}
             </motion.a>

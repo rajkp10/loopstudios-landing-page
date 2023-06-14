@@ -1,7 +1,6 @@
 // import React from "react";
-
-import Navbar from "./Navbar";
 import { motion } from "framer-motion";
+import Navbar from "./Navbar";
 
 const heroVariant = {
   hidden: {
@@ -13,15 +12,16 @@ const heroVariant = {
     scaleY: 1,
     transition: {
       duration: 0.8,
+      delay: 1.5,
     },
   },
 };
 
 function Hero() {
   return (
-    <section className="grid w-full h-screen p-4 overflow-hidden bg-fixed bg-center bg-no-repeat bg-cover bg-very-dark-gray place-content-center bg-bgHeroMobile md:bg-bgHeroDesktop">
-      <div className="relative flex items-center w-full h-screen max-w-7xl">
-        <Navbar />
+    <section className="relative grid w-full h-screen p-4 overflow-hidden bg-fixed bg-center bg-no-repeat bg-cover bg-very-dark-gray place-content-center bg-bgHeroMobile md:bg-bgHeroDesktop">
+      <Navbar />
+      <div className="flex items-center max-w-7xl">
         <motion.div
           initial="hidden"
           animate="visible"

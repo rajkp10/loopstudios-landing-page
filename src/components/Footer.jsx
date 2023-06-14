@@ -7,7 +7,7 @@ const Logo = ({ src, alt }) => {
   return (
     <a
       href="#"
-      className="relative p-2 before:absolute before:content-[''] before:h-[2px] before:w-0 before:transition-all before:duration-150 hover:before:w-5 before:bg-white before:mx-auto before:bottom-0 before:right-0 before:left-0"
+      className="relative p-2 pt-0 before:absolute before:content-[''] before:h-[2px] before:w-0 before:transition-all before:duration-150 hover:before:w-5 before:bg-white before:mx-auto before:bottom-0 before:right-0 before:left-0"
     >
       <img src={src} alt={alt} />
     </a>
@@ -22,7 +22,7 @@ function Footer() {
           <picture>
             <img src={logo} alt="logo" className="w-3/4 mx-auto md:mx-0" />
           </picture>
-          <NavLinks fontSize={"text-sm"} />
+          <NavLinks fontSize={"text-sm"} fontType={"font-alata"} />
         </section>
         <section className="flex flex-col items-center gap-4 md:gap-6 md:items-end">
           <div className="flex items-center gap-0">

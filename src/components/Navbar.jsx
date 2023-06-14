@@ -13,6 +13,7 @@ const logoVariant = {
     y: 0,
     transition: {
       duration: 0.8,
+      delay: 1.5,
     },
   },
 };
@@ -20,7 +21,7 @@ const logoVariant = {
 function Navbar() {
   const [open, setOpen] = useCycle(false, true);
   return (
-    <motion.nav className="absolute w-full pt-4 top-5 md:top-10">
+    <motion.nav className="absolute left-0 right-0 z-10 w-full px-4 pt-4 mx-auto md:px-0 max-w-7xl top-5 md:top-10">
       <motion.div
         initial="hidden"
         animate="visible"
@@ -31,7 +32,7 @@ function Navbar() {
           <img src={logo} alt="logo" className="w-3/4" />
         </picture>
         <div className="hidden md:block">
-          <NavLinks fontSize={"text-sm"} />
+          <NavLinks fontSize={"text-sm"} fontType={"font-alata"} />
         </div>
         <div className="md:hidden">
           <img
