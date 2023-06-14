@@ -10,9 +10,9 @@ function Menu({ open, setOpen }) {
       {open && (
         <motion.aside
           id="menu"
-          className="fixed bottom-0 left-0 right-0 z-20 flex items-center justify-start h-screen overflow-hidden bg-black "
+          className="fixed bottom-0 left-0 right-0 z-20 flex items-center justify-start overflow-hidden bg-black "
           initial={{ height: 0 }}
-          animate={{ height: "100vh", transition: { duration: 0.5 } }}
+          animate={{ height: "100%", transition: { duration: 0.5 } }}
           exit={{ height: 0, transition: { delay: 1, duration: 0.5 } }}
         >
           <motion.section
