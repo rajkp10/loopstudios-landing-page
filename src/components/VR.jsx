@@ -65,7 +65,7 @@ function VR() {
           whileInView="visible"
           variants={articleVariant}
           viewport={{ once: true, amount: 0.5 }}
-          className="text-center bg-white md:bottom-0 md:right-0 md:w-1/2 md:p-24 md:pb-0 md:text-left md:absolute"
+          className="text-center bg-white md:bottom-0 md:right-0 md:w-1/2 md:pt-24 md:pl-24 md:text-left md:absolute"
         >
           <motion.span
             initial="hidden"
@@ -81,7 +81,7 @@ function VR() {
             whileInView="visible"
             variants={textVariant}
             viewport={{ once: true, amount: 0.5 }}
-            className="mt-6 text-sm leading-6 font-alata text-dark-gray"
+            className="px-4 mt-6 leading-7 md:px-0 text-md font-alata text-dark-gray"
           >
             Founded in 2011, Loopstudios has been producing world-class virtual
             reality projects for some of the best companies around the globe.
