@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-To view : <a href="https://loopstudios-landing-page-rajkp10.netlify.app" target="_blaank">Live Preview ✨</a>
+To view : <a href="https://loopstudios-landing-page-rajkp10.netlify.app" target="_blank">Live Preview ✨</a>
 
 ## About Project
 
